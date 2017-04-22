@@ -1,0 +1,9 @@
+<h1>Payment Results</h1>
+
+<h5>APR: </h5><%= number_to_percentage(params["user_apr"].to_f, precision:4) %>
+
+<h5>Number of years: </h5><%= params["user_years"].to_i %>
+
+<h5>Principal: </h5><%= number_to_currency(params["user_pv"].to_f) %>
+
+<h5>Payment: </h5><%= number_to_currency(@monthly_payment) %>

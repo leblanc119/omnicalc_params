@@ -1,0 +1,12 @@
+<h1>Word Count Results</h1>
+
+
+<h5>Text: </h5><%= params["user_text"]%>
+
+<h5>Word Count: </h5><%= @word_count%>
+
+<h5> Character Count (with spaces): </h5><%= @char_count_spaces%>
+
+<h5>Character Count (without spaces): </h5><%= @char_count_nospace%>
+
+<h5>Occurrences of <%= params["special_word"] %>: </h5><%= @occurrences%>
